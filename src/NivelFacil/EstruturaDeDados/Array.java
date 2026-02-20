@@ -1,4 +1,4 @@
-package EstruturaDeDados;
+package NivelFacil.EstruturaDeDados;
 
 public class Array {
 
