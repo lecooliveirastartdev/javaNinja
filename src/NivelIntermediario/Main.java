@@ -20,6 +20,12 @@ public class Main {
         Leco.aldeia = "Aldeia da folha";
         Leco.idade = 49;
 
+        // Aplicando Metodos Criados
+        Leco.sharinganAtivado();
+        String chamandoMetodoString = Leco.EuSouUmNinja();
+        System.out.println(chamandoMetodoString);
+    
+
     }
 
 }
