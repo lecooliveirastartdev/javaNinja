@@ -1,6 +1,10 @@
 
 public class Main {
     public static void main(String[] args) {
+
+        Hokages Hashirama = new Hokages();
+        Hashirama.idade = 45;
+
         // Objeto 01
         Uzumaki Naruto = new Uzumaki();
         Naruto.nome = "Naruto Uzumaki";
@@ -46,8 +50,6 @@ public class Main {
         Boruto.AtivarOkarma();
         Boruto.AtivarJogan();
         System.out.println(" ");
-
-    
 
     }
 
