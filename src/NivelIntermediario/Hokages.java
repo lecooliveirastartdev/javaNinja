@@ -1,17 +1,24 @@
 public class Hokages extends Ninja {
 
-    String nome;
-    int idade;
-    boolean VivoOuNao;
+   public boolean VivoOuNao;
+   
+   //All args Constructor
+      public Hokages (String nome,int idade,boolean VivoOuNao){
+   
+       this.nome = nome;
+       this.idade = idade;
+       this.VivoOuNao = VivoOuNao;
 
-    // Criando CONSTRUTORES
+   }
+
     public Hokages(int idade) {
-        this.idade = 45;
-
+        this.idade = idade;
     }
 
-    public Hokages() {
-        //TODO Auto-generated constructor stub
+    public Hokages(String nome) {
+        this.nome = nome;
     }
 
 }
+
+
