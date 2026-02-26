@@ -29,7 +29,10 @@ public class Uchiha extends Ninja {
     @Override
     public void habikidadeEspecial() {
         System.out.println("Meu nome é " + nome + " e este é meu ataque Uchiha ");
+    }
 
+    public void estrategiaDeBatalhaNinja() {
+        System.out.println("Esta e minha estrategia de batalha ");
     }
 
 }

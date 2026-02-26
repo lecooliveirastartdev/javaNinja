@@ -8,6 +8,10 @@ public class Uzumaki extends Ninja {
         System.out.println("Meu nome é " + nome + " e este é meu ataque Uzumaki ");
 
     }
+    // Metodo abstrato obrigatorio que veio da classe NINJA
+    public void estrategiaDeBatalhaNinja() {
+        System.out.println("Esta e minha estrategia de batalha ");
+    }
 
 
 }

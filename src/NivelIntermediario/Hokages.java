@@ -19,6 +19,11 @@ public class Hokages extends Ninja {
         this.nome = nome;
     }
 
+    // Metodo abstrato obrigatorio que veio da classe NINJA
+    public void estrategiaDeBatalhaNinja() {
+        System.out.println("Esta e minha estrategia de batalha ");
+    }
+
 }
 
 
