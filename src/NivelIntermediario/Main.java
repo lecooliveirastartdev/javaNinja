@@ -1,10 +1,11 @@
-import java.util.function.Consumer;
 
 public class Main {
     public static void main(String[] args) {
 
-        
-        Hokages Hiruzen = new Hokages( 45);
+        // Obj Uchiha REVISAR
+        Uchiha itachi = new Uchiha( );
+
+        Hokages Hiruzen = new Hokages(45);
         System.out.println(Hiruzen.idade);
 
         Hokages Minato = new Hokages("Minato namikaze", 32, false);
@@ -15,16 +16,11 @@ public class Main {
         naruto.nome = "Naruto Uzumaki";
         naruto.habikidadeEspecial();
 
-
         // Obj Uchiha
         Uchiha sasuke = new Uchiha();
         sasuke.nome = "Naruto Uzumaki";
         sasuke.habikidadeEspecial();
 
-        
     }
-
-   
-    
 
 }

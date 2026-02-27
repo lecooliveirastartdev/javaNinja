@@ -1,5 +1,10 @@
 public class Hinata extends Uzumaki {
 
+    public Hinata(){
+        super();
+        
+    }
+
     public void AtivarBeleza() {
         System.out.println("Eu sou " + ", e estou ativando minha beleza maxima ");
 

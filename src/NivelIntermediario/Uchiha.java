@@ -1,5 +1,14 @@
 public class Uchiha extends Ninja {
 
+    public Uchiha() {
+        super();
+    }
+
+    public Uchiha(String nome, String nivelDeDificuldade, String statusDaMissao, String missao, String aldeia,
+            int idade) {
+        super(nome, nivelDeDificuldade, statusDaMissao, missao, aldeia, idade);
+    }
+
     String habikidadeEspecial;
 
     // Metodo Habilidade Especial
