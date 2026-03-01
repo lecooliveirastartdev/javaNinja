@@ -1,4 +1,9 @@
-public class Uchiha extends Ninja {
+public class Uchiha extends Ninja implements ShariganInterface {
+
+    // Metodo Sharigan Ativado VEM DIRETO DA INTERFACE!
+    public void sharinganAtivado() {
+        System.out.println(nome + "Eu sou " + ", e meu sharigan esta ativado ");
+    }
 
     public Uchiha() {
         super();
@@ -8,17 +13,11 @@ public class Uchiha extends Ninja {
             int idade) {
         super(nome, nivelDeDificuldade, statusDaMissao, missao, aldeia, idade);
     }
-
     String habikidadeEspecial;
 
     // Metodo Habilidade Especial
     public void mostraHabilidadeEspecial() {
         System.out.println("Habilidade Especial ");
-    }
-
-    // Metodo Sharigan Ativado
-    public void sharinganAtivado() {
-        System.out.println("Eu sou " + ", e meu sharigan esta ativado ");
     }
 
     public void nivelDeDificuldade() {
