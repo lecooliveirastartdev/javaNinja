@@ -16,6 +16,10 @@ public class Uzumaki extends Ninja implements AmbuInterface {
         super(nome, nivelDeDificuldade, statusDaMissao, missao, aldeia, idade);
     }
 
+    public Uzumaki(String string, String string2, int i) {
+        //TODO Auto-generated constructor stub
+    }
+
     public void ModoSabioAtivaçao() {
         System.out.println("Meu e: " + nome + ", E eu Ativei o modo sabio! ");
     }

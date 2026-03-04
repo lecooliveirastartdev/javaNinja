@@ -2,17 +2,22 @@ public class Uchiha extends Ninja implements ShariganInterface {
 
     // Metodo Sharigan Ativado VEM DIRETO DA INTERFACE!
     public void sharinganAtivado() {
-        System.out.println(nome + "Eu sou " + ", e meu sharigan esta ativado ");
+        System.out.println(nome + "Eu sou " + nome + ", e meu sharigan esta ativado ");
     }
 
     public Uchiha() {
         super();
     }
 
-    public Uchiha(String nome, String nivelDeDificuldade, String statusDaMissao, String missao, String aldeia,
-            int idade) {
-        super(nome, nivelDeDificuldade, statusDaMissao, missao, aldeia, idade);
+    public Uchiha(String nome, String aldeia, int idade, int numerosDemissoesConcluidas, String rank) {
+        super(nome, aldeia, idade, numerosDemissoesConcluidas, rank);
+
     }
+
+    public Uchiha(String string, String string2, int i) {
+        //TODO Auto-generated constructor stub
+    }
+
     String habikidadeEspecial;
 
     // Metodo Habilidade Especial
@@ -41,6 +46,23 @@ public class Uchiha extends Ninja implements ShariganInterface {
 
     public void estrategiaDeBatalhaNinja() {
         System.out.println("Esta e minha estrategia de batalha ");
+    }
+
+    @Override
+    public void inteligenciaDeCombate() {
+
+    }
+
+    @Override
+    public void inteligenciaDeCombate(int qi) {
+
+        if (qi > 150) {
+            System.out.println("Seu QI é: " + " e você é um genio");
+        } else if (qi >= 130) {
+            System.out.println("Seu QI é: " + " e você é um promissor");
+        } else {
+            System.out.println("Seu QI é: " + " e você é um genio");
+        }
     }
 
 }
