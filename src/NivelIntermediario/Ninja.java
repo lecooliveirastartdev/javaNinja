@@ -8,10 +8,17 @@ public abstract class Ninja implements estrategiaDeBatalhaNinja {
    int idade;
    int numerosDemissoesConcluidas;
    String rank;
+   final double altura = 2.10;
 
    public Ninja() {
 
    }
+
+   // TODO MINJA VAI FAZER OBRIGATORIAMENTE
+   final void tacarKunai(){
+System.out.println(" EU SOU UM METODO DA CLASSE MAE! ");
+
+   } 
 
    // TODO: Sobre carga dos construtores os novos atributos
    // Sobrecargas de metodos voce nao precisa redeclarar o construtor so os novos

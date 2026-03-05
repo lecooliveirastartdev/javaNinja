@@ -15,6 +15,7 @@ public class Uzumaki extends Ninja implements AmbuInterface {
             int idade) {
         super(nome, nivelDeDificuldade, statusDaMissao, missao, aldeia, idade);
     }
+    
 
     public Uzumaki(String string, String string2, int i) {
         //TODO Auto-generated constructor stub
@@ -29,6 +30,11 @@ public class Uzumaki extends Ninja implements AmbuInterface {
         System.out.println("Meu nome é " + nome + " e este é meu ataque Uzumaki ");
 
     }
+
+    
+        
+
+    
 
     // Metodo abstrato obrigatorio que veio da classe NINJA
     public void estrategiaDeBatalhaNinja() {
