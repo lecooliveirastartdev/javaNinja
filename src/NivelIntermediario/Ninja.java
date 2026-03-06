@@ -1,90 +1,63 @@
-public abstract class Ninja implements estrategiaDeBatalhaNinja {
+public abstract class Ninja {
 
-   // TODO: incluir 2 novos atributos: numerosDemissoesConcluidas, Rank
-   // TODO: Rank: Genim, Chuunin, Jounin, Hokage
-
-   String nome;
-   String aldeia;
-   int idade;
-   int numerosDemissoesConcluidas;
-   String rank;
-   final double altura = 2.10;
+   private String nome; // CAIXA PRIVADA
+   private String aldeia;
+   private int idade;
+   private int numerosDemissoesConcluidas;
+   private double altura = 2.10;
 
    public Ninja() {
 
    }
 
-   // TODO MINJA VAI FAZER OBRIGATORIAMENTE
-   final void tacarKunai(){
-System.out.println(" EU SOU UM METODO DA CLASSE MAE! ");
-
-   } 
-
-   // TODO: Sobre carga dos construtores os novos atributos
-   // Sobrecargas de metodos voce nao precisa redeclarar o construtor so os novos
-   // atributos
-   // AJUSTAR SE FOR PRECISO LEMBRETE
-   public Ninja(String nome, String nivelDeDificuldade, String statusDaMissao, String missao, String aldeia,
-         int idade) {
+   public Ninja(String nome, String aldeia, int idade, int numerosDemissoesConcluidas, double altura) {
       this.nome = nome;
-      this.idade = idade;
       this.aldeia = aldeia;
-
-   }
-
-   // Metodo mostrar informações
-
-   // Metodo STRING
-   public String EuSouUmNinja() {
-      return "Oi Eu sou um ninja";
-
-   }
-
-   public Ninja(String nome, String aldeia, int idade, int numerosDemissoesConcluidas, String rank) {
+      this.idade = idade;
       this.numerosDemissoesConcluidas = numerosDemissoesConcluidas;
-      this.rank = rank;
+      this.altura = altura;
    }
 
-   // Metodo INT
-   public int anosParaSeTornarHokagem(int idadeMinimaParaSerHokage) {
-      return idadeMinimaParaSerHokage - idade;
-
+   // Tirar dados ou mostrar para o usuario eu uso o GET + NOME DA VARIAVEL
+   public String getNome() { // CAIXA PUBLICA TIRAR
+      return nome;
    }
 
-   // POLIMORFISMO Metodo GERAL
-   public void habilidadeEspecial() {
-      System.out.println("Meu nome é " + nome + " e esse e o meu atque especial ");
-
+   // Receber dados "VALORES"
+   public void setNome(String nome) { // CAIXA PUBLICA COLOCAR
+      this.nome = nome;
    }
 
-   // Metodo GERAL: Todos os ninjas vão ver
-   public void habikidadeEspecial() {
-      System.out.println("Meu nome é " + nome + " e esse e o meu atque especial ");
-
+   public String getAldeia() {
+      return aldeia;
    }
 
-   // Metodo ABSTRATO - SERÁ obrigatório em todas as CLASSES
-   @Override
-   public abstract void estrategiaDeBatalhaNinja();
-
-   // inteligencia de combate - Metodo PADRAO
-   public void inteligenciaDeCombate() {
-
+   public void setAldeia(String aldeia) {
+      this.aldeia = aldeia;
    }
 
-   // Inteligencia de combate - sobrecarga de metodo
-   
-   public void inteligenciaDeCombate(int qi) {
-
-      if (qi > 150) {
-         System.out.println("Seu QI é: " + " e você é um genio");
-      } else if (qi >= 130) {
-         System.out.println("Seu QI é: " + " e você é um promissor");
-      } else {
-         System.out.println("Seu QI é: " + " e você é um genio");
-      }
+   public int getIdade() {
+      return idade;
    }
 
-   
+   public void setIdade(int idade) {
+      this.idade = idade;
+   }
+
+   public int getNumerosDemissoesConcluidas() {
+      return numerosDemissoesConcluidas;
+   }
+
+   public void setNumerosDemissoesConcluidas(int numerosDemissoesConcluidas) {
+      this.numerosDemissoesConcluidas = numerosDemissoesConcluidas;
+   }
+
+   public double getAltura() {
+      return altura;
+   }
+
+   public void setAltura(double altura) {
+      this.altura = altura;
+   }
 
 }

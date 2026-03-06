@@ -1,45 +1,16 @@
-public class Uzumaki extends Ninja implements AmbuInterface {
-
-    // metodo Ambu METODO INTERFACE
-    @Override
-    public void ninjaDeElite(){
-        System.out.println(nome+ ": Eu sou um nija de elite");
-     }
+public class Uzumaki extends Ninja {
 
     public Uzumaki() {
-        super();
-
-    }
-
-    public Uzumaki(String nome, String nivelDeDificuldade, String statusDaMissao, String missao, String aldeia,
-            int idade) {
-        super(nome, nivelDeDificuldade, statusDaMissao, missao, aldeia, idade);
-    }
-    
-
-    public Uzumaki(String string, String string2, int i) {
-        //TODO Auto-generated constructor stub
-    }
-
-    public void ModoSabioAtivaçao() {
-        System.out.println("Meu e: " + nome + ", E eu Ativei o modo sabio! ");
-    }
-
-    
-    public void habikidadeEspecial() {
-        System.out.println("Meu nome é " + nome + " e este é meu ataque Uzumaki ");
-
-    }
-
-    
         
+    }
+
+    public Uzumaki(String nome, String aldeia, int idade, int numerosDemissoesConcluidas, double altura) {
+        super(nome, aldeia, idade, numerosDemissoesConcluidas, altura);
+    }
 
     
 
-    // Metodo abstrato obrigatorio que veio da classe NINJA
-    public void estrategiaDeBatalhaNinja() {
-        System.out.println("Esta e minha estrategia de batalha ");
-    }
+   
 
    
 }
