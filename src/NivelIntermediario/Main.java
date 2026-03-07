@@ -1,4 +1,7 @@
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -17,6 +20,26 @@ public class Main {
         System.out.println("------------Sasuke Uchiha------------");
         Uchiha sasuke = new Uchiha("Sasuke Uchiha", "Aldeia da  folha", 15, 400, 1.84);
         System.out.println(sasuke.getAltura());
+
+        /*
+         * LIST nao sao estaticas elas podem aumentar ou diminuir
+         * .add -> ADICIONA | .remove -> REMOVE | .set -> TROCAR | .size -> VER TAMANO List
+         * lis
+         */
+        List<String> ninjasList = new ArrayList<>();
+        ninjasList.add("Naruto Uzumaki");
+        ninjasList.add("Sasuke Uchiha");
+        ninjasList.add("Sakura Haruno");
+        ninjasList.add("Tobirama Senju");
+        System.out.println(ninjasList);
+
+        ninjasList.remove("Naruto Uzumaki");
+        System.out.println(ninjasList);
+
+        // Trocar elementos
+        ninjasList.set(0, "Leco Oliveira");
+        System.out.println(ninjasList);
+        System.out.println(ninjasList.size());
 
     }
 
