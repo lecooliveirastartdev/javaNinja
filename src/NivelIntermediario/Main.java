@@ -1,45 +1,26 @@
-
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
 
-        Missoes missao1 = new Missoes("Resgatar cachorro ", RankDeMissoes.S);
-        missao1.exibirDetalhes();
-        System.out.println("--------------------------------");
+        Ninja cadastro = new Ninja("naruto ", "naruto@email.com ", 99999999);
+        System.out.println(cadastro);
 
-        System.out.println("------------Naruto Uzumaki------------");
-        Uzumaki naruto = new Uzumaki("Naruto Uzumaki", " Aldeia da folha", 18, 100, 2.10);
-        System.out.println(naruto.getNome());
-        naruto.setNome("Naruto Uzumaki com o nome alterado");
-        System.out.println("Naruto Uzumaki com o nome alterado");
+        NinjaRecord cadastroNinjaRecord = new NinjaRecord("Leco ", "Leco@.com ", 1111111);
+        System.out.println(cadastroNinjaRecord);
 
-        System.out.println("");
-
-        System.out.println("------------Sasuke Uchiha------------");
-        Uchiha sasuke = new Uchiha("Sasuke Uchiha", "Aldeia da  folha", 15, 400, 1.84);
-        System.out.println(sasuke.getAltura());
-
-        /*
-         * LIST nao sao estaticas elas podem aumentar ou diminuir
-         * .add -> ADICIONA | .remove -> REMOVE | .set -> TROCAR | .size -> VER TAMANO List
-         * lis
-         */
-        List<String> ninjasList = new ArrayList<>();
-        ninjasList.add("Naruto Uzumaki");
-        ninjasList.add("Sasuke Uchiha");
-        ninjasList.add("Sakura Haruno");
-        ninjasList.add("Tobirama Senju");
-        System.out.println(ninjasList);
-
-        ninjasList.remove("Naruto Uzumaki");
-        System.out.println(ninjasList);
-
-        // Trocar elementos
-        ninjasList.set(0, "Leco Oliveira");
-        System.out.println(ninjasList);
-        System.out.println(ninjasList.size());
+        Stack<String> ninjStack = new Stack<>();
+        ninjStack.add("Naruto Uzumaki");
+        ninjStack.push("Sasuke Uchiha");
+        ninjStack.push("Sakura haruno");
+        System.out.println(ninjStack);
+        ninjStack.pop();
+        System.out.println(ninjStack);
+        System.out.println(ninjStack.size());
+        ninjStack.add("LecoOliveira");
+        System.out.println(ninjStack.size());
 
     }
 
