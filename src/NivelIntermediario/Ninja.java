@@ -1,36 +1,47 @@
 public class Ninja {
 
-   private final String nome; // CAIXA PRIVADA
-   private final String email;
-   private final int telefone;
+   private  String nome; // CAIXA PRIVADA
+   private int idade;
+   private String vila;
 
-
-   public Ninja(String nome, String email, int telefone) {
-      this.nome = nome;
-      this.email = email;
-      this.telefone = telefone;
-   }
-
+   public Ninja(String nome, int idade, String vila) {
+    this.nome = nome;
+    this.idade = idade;
+    this.vila = vila;
+}
 
    public String getNome() {
       return nome;
    }
-
-
-   public String getEmail() {
-      return email;
+   public void setNome(String nome) {
+      this.nome = nome;
    }
-
-
-   public int getTelefone() {
-      return telefone;
+   public int getIdade() {
+      return idade;
    }
-
+   public void setIdade(int idade) {
+      this.idade = idade;
+   }
+   public String getVila() {
+      return vila;
+   }
+   public void setVila(String vila) {
+      this.vila = vila;
+   }
 
    @Override
    public String toString() {
-    return "Ninja [nome=" + nome + ", email=" + email + ", telefone=" + telefone + "]";
+      return "Ninja [nome=" + nome + ", idade=" + idade + ", vila=" + vila + "]";
    }
+
+   
+
+
+
+   
+
+
+   
 
    
 
